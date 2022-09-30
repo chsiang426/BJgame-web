@@ -1,0 +1,43 @@
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#dealer-cards img{
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+}
+
+#your-cards img{
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+}
+
+#hit{
+    width: 100px;
+    height: 50px;
+    font-size:20px;
+}
+
+#stay{
+    width: 100px;
+    height: 50px;
+    font-size:20px;
+}
+
+#new-game{
+    width: 130px;
+    height: 50px;
+    font-size:20px;
+}
+
+#results{
+    font-size: 40px;
+    color: rgb(213, 55, 55);
+}

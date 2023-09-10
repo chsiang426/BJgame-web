@@ -128,13 +128,13 @@ function stay(){
     if (yourSum > 21){
         messege = "You Lose!";
     }else if (dealerSum > 21){
-        messege = "You Win!";
+        messege = "You Win !";
     }else if (yourSum == dealerSum){
-        messege = "It's a tie!";
+        messege = "It's a tie !";
     }else if (yourSum > dealerSum){
-        messege = "You Win!";
+        messege = "You Win !";
     }else if (yourSum < dealerSum){
-        messege = "You Lose!";
+        messege = "You Lose !";
     }
 
     document.getElementById("dealer-sum").textContent = dealerSum;

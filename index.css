@@ -19,25 +19,110 @@ body {
     margin: 1px;
 }
 
-#hit{
-    width: 100px;
-    height: 50px;
-    font-size:20px;
-}
+#hit {
+    width: 120px;
+    height: 55px;
+    border-radius: 28px;
+    font-size: 20px;
+    background: linear-gradient(to bottom, #d93f3f 0%,#960e0e 100%);
+    color: white;
+    border: none;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.5);
+    transition: all 0.2s ease;
+  }
+  
+  #hit:hover {
+    transform: translateY(-2px);
+    box-shadow: 2px 8px 15px rgba(0,0,0,0.7);
+  }
+  
+  #hit:active {
+    transform: translateY(3px);
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.7);
+  }
+  
+  
+  #stay {
+    width: 120px;
+    height: 55px;
+    border-radius: 28px;
+    font-size: 20px;  
+    background: linear-gradient(to bottom, #3cb371 0%,#1b4b1b 100%);
+    color: white;
+    border: none;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.5);
+    transition: all 0.2s ease;  
+  }
+  
+  #stay:hover {
+    transform: translateY(-2px);
+    box-shadow: 2px 8px 15px rgba(0,0,0,0.7);
+  }
+  
+  #stay:active {
+    transform: translateY(3px);
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.7);
+  }
+  
+  
+  #new-game {
+    width: 150px;
+    height: 55px;
+    border-radius: 28px;
+    font-size: 20px;
+    background: linear-gradient(to bottom, #1e90ff 0%,#08298a 100%);
+    color: white; 
+    border: none;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.5);
+    transition: all 0.2s ease;
+  }
+  
+  #new-game:hover {
+    transform: translateY(-2px);
+    box-shadow: 2px 8px 15px rgba(0,0,0,0.7); 
+  }
+  
+  #new-game:active {
+    transform: translateY(3px);
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.7);
+  }
 
-#stay{
-    width: 100px;
-    height: 50px;
-    font-size:20px;
-}
+  #results {
 
-#new-game{
-    width: 130px;
-    height: 50px;
-    font-size:20px;
-}
-
-#results{
-    font-size: 40px;
-    color: rgb(213, 55, 55);
-}
+    font-size: 35px;
+  
+    background: #d93f3f;
+    background-image: linear-gradient(45deg, rgba(0,0,0,0.1) 25%, transparent 25%, transparent 50%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.1) 75%, transparent 75%, transparent);
+    background-size: 4px 4px;
+    
+    color: white;
+    
+    text-shadow: 
+      0 0 5px #960e0e,
+      0 0 10px #960e0e,  
+      0 0 20px #960e0e,
+      0 0 40px #960e0e,
+      0 0 80px #960e0e,
+      0 0 90px #960e0e;
+    
+    animation: flicker 1.5s infinite alternate;
+    
+  }
+  
+  @keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #d93f3f,
+        0 0 80px #d93f3f,
+        0 0 90px #d93f3f,
+        0 0 100px #d93f3f,
+        0 0 150px #d93f3f;
+    }
+    
+    20%, 24%, 55% {        
+      text-shadow: none;
+    }
+  }
